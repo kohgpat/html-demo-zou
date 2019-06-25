@@ -1,44 +1,46 @@
-.header__container {
-  display: flex;
-  align-items: center;
-  height: 100px;
-}
-
-.header__signup {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 16px;
-}
-
-.header__logo {
-  background-size: cover;
-  background-position: center;
-  background-image: url(/src/images/logo.svg);
-  background-repeat: no-repeat;
-  width: 123px;
-  height: 39px;
-}
-
-.header__nav {
-  margin-left: 7em;
-}
-
-.header__nav-item {
-  font-size: 1rem;
-  color: #000;
-  text-decoration: none;
-
-  &:not(:last-child) {
-    margin-right: 32px;
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 100px;
   }
-}
 
-.header__nav-item_active {
-  color: #66bb6a;
-  font-weight: bold;
-}
+  &__signup {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+  }
 
-.header__signup {
-  margin-left: auto;
+  &__logo {
+    background-size: cover;
+    background-position: center;
+    background-image: url(/src/images/logo.svg);
+    background-repeat: no-repeat;
+    width: 123px;
+    height: 39px;
+  }
+
+  &__nav {
+    margin-left: 7em;
+  }
+
+  &__nav-item {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    &_active {
+      color: #66bb6a;
+      font-weight: bold;
+    }
+  }
+
+  &__signup {
+    margin-left: auto;
+  }
 }

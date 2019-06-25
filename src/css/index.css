@@ -182,6 +182,35 @@ a.button {
   background-color: #66bb6a;
 }
 
+.opportunities-item__icon-wrapper {
+  height: 64px;
+}
+
+.opportunities-item__icon {
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.opportunities-item__icon_connect {
+  background-image: url(/src/images/opportunities-connect-icon.svg);
+  height: 64px;
+  width: 78px;
+}
+
+.opportunities-item__icon_grow {
+  background-image: url(/src/images/opportunities-grow-icon.svg);
+  height: 32px;
+  width: 79px;
+}
+
+.opportunities-item__icon_social {
+  background-image: url(/src/images/opportunities-social-icon.svg);
+  height: 56px;
+  width: 75px;
+}
+
 .opportunities-item__title {
   margin-bottom: 22px;
 }

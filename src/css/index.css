@@ -263,9 +263,14 @@ a.button {
 
 .how-it-works__container {
   background-color: #66bb6a;
+  background-image: url(/src/images/how-it-works-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding: 0 50px;
   color: #fff;
   padding: 100px;
+  position: relative;
 }
 
 .how-it-works__title {

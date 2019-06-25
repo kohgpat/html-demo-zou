@@ -101,7 +101,7 @@ a.button {
 body {
   background-image: url(/src/images/main-background.svg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: left bottom;
 }
 
 #home {

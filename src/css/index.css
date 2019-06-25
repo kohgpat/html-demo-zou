@@ -108,6 +108,18 @@ body {
   background-image: url(/src/images/main-illustration.svg);
   background-repeat: no-repeat;
   background-position: top right;
+
+  @media (min-width: 46em) {
+    background-size: var(--bp-med);
+  }
+
+  @media (min-width: 50em) {
+    background-size: var(--bp-large);
+  }
+
+  @media (min-width: 73em) {
+    background-size: var(--bp-xl);
+  }
 }
 
 .header__container {

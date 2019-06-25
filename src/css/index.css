@@ -1,4 +1,13 @@
-*, *::before, *::after {
+:root {
+  --bp-small: 24em;
+  --bp-med: 46em;
+  --bp-large: 50em;
+  --bp-xl: 73em;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -6,12 +15,266 @@ html {
   box-sizing: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--bp-small);
+
+  @media (min-width: 46em) {
+    max-width: var(--bp-med);
+  }
+
+  @media (min-width: 50em) {
+    max-width: var(--bp-large);
+  }
+
+  @media (min-width: 73em) {
+    max-width: var(--bp-xl);
+  }
+}
+
+.title_h1 {
+  font-size: 46px;
+  line-height: 64px;
+}
+
+.title_h3 {
+  font-size: 36px;
+  line-height: 64px;
+}
+
+.title_h4 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.header__logo {
+  background-size: cover;
+  background-position: center;
+  background-image: url(/src/images/logo.svg);
+  background-repeat: no-repeat;
+  width: 123px;
+  height: 39px;
+}
+
+.header__nav {
+  margin-left: 7em;
+}
+
+.header__nav-item {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.header__nav-item_active {
+  color: #66bb6a;
+  font-weight: bold;
+}
+
+.header__signup {
+  margin-left: auto;
+}
+
+.hero__title {
+  margin-top: 132px;
+  width: 40%;
+}
+
+.hero__description {
+  font-size: 18px;
+  line-height: 32px;
+  width: 40%;
+  margin-bottom: 54px;
+}
+
+.opportunities {
+  margin-top: 228px;
+}
+
+.opportunities__container {
+  padding-bottom: 140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.opportunities__title {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.opportunities__description {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.opportunities__list {
+  margin-top: 62px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.opportunities__list-item {
+  flex: 1;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.opportunities-item {
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: -1px 13px 20px #f0f2f4;
+  height: 328px;
+}
+
+.opportunities-item_green {
+  background-color: #66bb6a;
+}
+
+.opportunities-item__title {
+  margin-bottom: 22px;
+}
+
+.opportunities-item_green .opportunities-item__title {
+  color: #fff;
+}
+
+.opportunities-item_green .opportunities-item__description {
+  color: #fff;
+}
+
+.investments {
+  padding-top: 82px;
+}
+
+.investments__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.investments__description {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 90px;
+}
+
+.investments__cards {
+  display: flex;
+}
+
+.investments-card {
+  flex: 1;
+  padding: 40px 70px;
+  background-color: #324148;
+  border-radius: 5px;
+  color: #fff;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.investments-card__label {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2.8px;
+  color: #66bb6a;
+  text-transform: uppercase;
+}
+
+.investments-card__label-underline {
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 56px;
+  margin-top: 18px;
+}
+
+.investments-card__title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.investments-card__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #E2EFD2;
+  margin-top: 0;
+  margin-bottom: 28px;
+  max-width: 70%;
+}
+
+.how-it-works {
+  margin-top: 117px;
+}
+
+.how-it-works__container {
+  background-color: #66bb6a;
+  padding: 0 50px;
+  color: #fff;
+  padding: 100px;
+}
+
+.how-it-works__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.how-it-works__description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.how-it-works_features {
+  margin-top: 80px;
+  list-style: none;
+  padding: 0;
+}
+
+.how-it-works-feature {
+  display: flex;
+}
+
+.how-it-works-feature__title {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  flex: 2;
+}
+
+.how-it-works-feature__description {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  flex: 3;
 }

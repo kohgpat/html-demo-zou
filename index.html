@@ -1,14 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Zou</title>
-  <link rel="stylesheet" type="text/css" href="./src/css/index.css">
-</head>
-<body>
-  <div id="app">
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zou</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Chivo:400,700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="./src/css/index.css" />
+  </head>
+  <body>
+    <div id="home">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo"></div>
+          <nav class="header__nav">
+            <a href="#" class="header__nav-item header__nav-item_active"
+              >Home</a
+            >
+            <a href="#" class="header__nav-item">Product</a>
+            <a href="#" class="header__nav-item">Team</a>
+            <a href="#" class="header__nav-item">Blog</a>
+            <a href="#" class="header__nav-item">Contact</a>
+          </nav>
+          <button class="header__signup button">Sign Up</button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="hero">
+          <div class="hero__container container">
+            <h1 class="hero__title title title_h1">
+              A New Way to Invest in Agriculture
+            </h1>
+
+            <p class="hero__description">
+              Zou provides farmes, ranchers, private foresters, and agricultural
+              producers with online self service applications and educational
+              materials.
+            </p>
+
+            <button type="button" class="hero__button button">
+              Invest Now
+            </button>
+          </div>
+        </div>
+
+        <div class="opportunities">
+          <div class="opportunities__container container">
+            <h3 class="opportunities__title title title_h3">
+              New Opportunities
+            </h3>
+
+            <p class="opportunities__description">
+              We are the first and the only crowdfunding platform enabling you
+              to help finance our farmers.
+            </p>
+
+            <ul class="opportunities__list">
+              <li class="opportunities__list-item">
+                <div class="opportunities-item">
+                  <h4 class="opportunities-item__title title title_h4">
+                    Connect with your farmers
+                  </h4>
+
+                  <p class="opportunities-item__description">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit, sed quia consequuntur magni dolores eos qui
+                    ratione.
+                  </p>
+                </div>
+              </li>
+
+              <li class="opportunities__list-item">
+                <div class="opportunities-item opportunities-item_green">
+                  <h4 class="opportunities-item__title title title_h4">
+                    Grow your business
+                  </h4>
+
+                  <p class="opportunities-item__description">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </p>
+                </div>
+              </li>
+
+              <li class="opportunities__list-item">
+                <div class="opportunities-item">
+                  <h4 class="opportunities-item__title title title_h4">
+                    Social Impact Invesment
+                  </h4>
+
+                  <p class="opportunities-item__description">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint
+                    occaecati cupiditate non provident.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="investments">
+          <div class="investments__container container">
+            <h3 class="investments__title title title_h3">
+              Invest on your convenience
+            </h3>
+
+            <p class="investments__description">
+              Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur.
+            </p>
+
+            <div class="investments__cards">
+              <div class="investments-card">
+                <span class="investments-card__label">New Farm Today</span>
+
+                <div class="investments-card__label-underline"></div>
+
+                <h4 class="investments-card__title">
+                  Short terms invesment
+                </h4>
+
+                <p class="investments-card__description">
+                  Invest in farms that will be ready for harvest in 3-18 months
+                </p>
+
+                <a href="#" class="investments-card__show-more button">
+                  Browse Farm
+                </a>
+              </div>
+
+              <div class="investments-card">
+                <span class="investments-card__label">Fully Funded</span>
+
+                <div class="investments-card__label-underline"></div>
+
+                <h4 class="investments-card__title">
+                  Long terms investment
+                </h4>
+
+                <p class="investments-card__description">
+                  Consider farms that have long term investment program.
+                </p>
+
+                <a href="#" class="investments-card__show-more button">
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="how-it-works">
+          <div class="how-it-works__container container">
+            <h3 class="how-it-works__title title title_h3">
+              How it works
+            </h3>
+
+            <p class="how-it-works__description">
+              Take your pick from the supply chain and participate in agribusiness
+              projects that are backed up not only by Zou, but also by the best
+              land, family heritage, innovation and overall superior expertise.
+            </p>
+
+            <div class="how-it-works__timeline"></div>
+
+            <ul class="how-it-works_features">
+              <li class="how-it-works__features-item">
+                <div class="how-it-works-feature">
+                  <h5 class="how-it-works-feature__title">
+                    Select your farmshare and complete reservation form.
+                  </h5>
+
+                  <p class="how-it-works-feature__description">
+                    Et harum quidem rerum facilis est et expedita distinctio. Nam
+                    libero tempore, cum soluta nobis est eligendi optio cumque
+                    nihil impedit quo minus id quod maxime placeat facere.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <h3 class="testimonials__title title title_h3">
+            What investors like you are saying about Zou
+          </h3>
+
+          <ul class="testimonials__list">
+            <li class="testimonials__list-item">
+              <div class="testimonial">
+                <div class="testimonial__person">
+                  <div class="testimonial__person-avatar"></div>
+                  <div class="testimonial__person-info">
+                    <div class="testimonial__person-name">
+                      Fernando Soler
+                    </div>
+
+                    <div class="testimonial__person-position">
+                      Telecommunication Engineer
+                    </div>
+                  </div>
+                </div>
+
+                <p class="testimonial__text">
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil molestiae consequatur, vel illum qui
+                  dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et
+                  accusamus et iusto odio dignissimos ducimus qui blanditiis
+                  praesentium
+                </p>
+              </div>
+            </li>
+
+            <li class="testimonials__list-item">
+              <div class="testimonial">
+                <div class="testimonial__person">
+                  <div class="testimonial__person-avatar"></div>
+                  <div class="testimonial__person-info">
+                    <div class="testimonial__person-name">
+                      Fernando Soler
+                    </div>
+
+                    <div class="testimonial__person-position">
+                      Telecommunication Engineer
+                    </div>
+                  </div>
+                </div>
+
+                <p class="testimonial__text">
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil molestiae consequatur, vel illum qui
+                  dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et
+                  accusamus et iusto odio dignissimos ducimus qui blanditiis
+                  praesentium
+                </p>
+              </div>
+            </li>
+
+            <li class="testimonials__list-item">
+              <div class="testimonial">
+                <div class="testimonial__person">
+                  <div class="testimonial__person-avatar"></div>
+                  <div class="testimonial__person-info">
+                    <div class="testimonial__person-name">
+                      Fernando Soler
+                    </div>
+
+                    <div class="testimonial__person-position">
+                      Telecommunication Engineer
+                    </div>
+                  </div>
+                </div>
+
+                <p class="testimonial__text">
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil molestiae consequatur, vel illum qui
+                  dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et
+                  accusamus et iusto odio dignissimos ducimus qui blanditiis
+                  praesentium
+                </p>
+              </div>
+            </li>
+
+            <li class="testimonials__list-item">
+              <div class="testimonial">
+                <div class="testimonial__person">
+                  <div class="testimonial__person-avatar"></div>
+                  <div class="testimonial__person-info">
+                    <div class="testimonial__person-name">
+                      Fernando Soler
+                    </div>
+
+                    <div class="testimonial__person-position">
+                      Telecommunication Engineer
+                    </div>
+                  </div>
+                </div>
+
+                <p class="testimonial__text">
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil molestiae consequatur, vel illum qui
+                  dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et
+                  accusamus et iusto odio dignissimos ducimus qui blanditiis
+                  praesentium
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="call-to-action">
+          <h3 class="call-to-action__title title title_h3">
+            The future of Farm Investing is Zou
+          </h3>
+
+          <button class="call-to-action__button button" type="button">
+            Invest Now
+          </button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__links">
+            <div class="footer-link-column">
+              <h6 class="footer-link-column__title title title_h6">
+                Company
+              </h6>
+
+              <nav class="footer-link-column__nav">
+                <a href="#" class="footer-link-column__nav-item">
+                  About Us
+                </a>
+                <a href="#" class="footer-link-column__nav-item">
+                  Team
+                </a>
+                <a href="#" class="footer-link-column__nav-item">
+                  Careers
+                </a>
+                <a href="#" class="footer-link-column__nav-item">
+                  Contact
+                </a>
+              </nav>
+            </div>
+
+            <div class="footer-link-column">
+              <h6 class="footer-link-column__title title title_h6">
+                Invest
+              </h6>
+
+              <nav class="footer-link-column__nav">
+                <a href="#" class="footer-link-column__nav-item">
+                  Features
+                </a>
+                <a href="#" class="footer-link-column__nav-item">
+                  How it works
+                </a>
+                <a href="#" class="footer-link-column__nav-item">
+                  Pricing
+                </a>
+                <a href="#" class="footer-link-column__nav-item">
+                  Login
+                </a>
+              </nav>
+            </div>
+
+            <div class="footer-link-column">
+              <h6 class="footer-link-column__title title title_h6">
+                Legal
+              </h6>
+
+              <nav class="footer-link-column__nav">
+                <a href="#" class="footer-link-column__nav-item">
+                  Privacy
+                </a>
+                <a href="#" class="footer-link-column__nav-item">
+                  Terms
+                </a>
+                <a href="#" class="footer-link-column__nav-item">
+                  Security
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="footer-blog">
+            <h5 class="footer-blog__title title title_h5">
+              Blog Zou
+            </h5>
+
+            <div class="footer-blog__contact">
+              Write email to us
+              <a href="#" class="footer-blog__email">
+                info@zoufarm.com
+              </a>
+            </div>
+
+            <button class="footer-blog__signin button">Sign In</button>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__logo"></div>
+
+          <small class="footer__copyright">
+            © Copyright 2018. Zou Capital Pty Ltd (ABN 45 4545 87363).
+          </small>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

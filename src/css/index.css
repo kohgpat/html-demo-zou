@@ -278,6 +278,7 @@ a.button {
   text-align: center;
   font-size: 18px;
   line-height: 32px;
+  color: #E8F5E9;
 }
 
 .how-it-works_features {
@@ -302,6 +303,7 @@ a.button {
   line-height: 24px;
   margin: 0;
   flex: 3;
+  color: #E8F5E9;
 }
 
 .testimonials__title {

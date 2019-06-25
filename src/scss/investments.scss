@@ -1,0 +1,84 @@
+.investments {
+  padding-top: 82px;
+}
+
+.investments__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.investments__description {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 90px;
+}
+
+.investments__cards {
+  display: flex;
+}
+
+.investments-card {
+  flex: 1;
+  padding: 40px 70px;
+  background-color: #324148;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  color: #fff;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.investments-card_1 {
+  background-image: url(/src/images/investments-card-1.jpg);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(/src/images/investments-card-1@2x.jpg);
+  }
+}
+
+.investments-card_2 {
+  background-image: url(/src/images/investments-card-2.jpg);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(/src/images/investments-card-2@2x.jpg);
+  }
+}
+
+.investments-card__label {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2.8px;
+  color: #66bb6a;
+  text-transform: uppercase;
+}
+
+.investments-card__label-underline {
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 56px;
+  margin-top: 18px;
+}
+
+.investments-card__title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.investments-card__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #e2efd2;
+  margin-top: 0;
+  margin-bottom: 28px;
+  max-width: 70%;
+}
+
+.investments-card__show-more {
+  display: inline-block;
+}

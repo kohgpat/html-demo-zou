@@ -75,6 +75,14 @@ a.button {
   text-decoration: none;
 }
 
+.button_success {
+  color: #fff;
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+  border-radius: 5px;
+  box-shadow: 0px 13px 20px rgba(118, 196, 125, 0.411204);
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -368,4 +376,20 @@ a.button {
 
 .call-to-action {
   margin-top: 180px;
+}
+
+.call-to-action__container {
+  padding: 70px 220px;
+  background: #FFFFFF;
+  box-shadow: -1px 25px 20px #F2F2F2;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.call-to-action__title {
+  margin: 0 0 2rem;
+}
+
+.call-to-action__marker {
+  color: #66bb6a;
 }

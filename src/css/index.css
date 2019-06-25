@@ -98,27 +98,22 @@ a.button {
   justify-content: center;
 }
 
-body {
-  background-image: url(/src/images/main-background.svg);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
 #home {
-  background-image: url(/src/images/main-illustration.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
+  background-image: url(/src/images/main-illustration.svg),
+                    url(/src/images/main-background.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, left bottom;
 
   @media (min-width: 46em) {
-    background-size: var(--bp-med);
+    background-size: var(--bp-med), cover;
   }
 
   @media (min-width: 50em) {
-    background-size: var(--bp-large);
+    background-size: var(--bp-large), cover;
   }
 
   @media (min-width: 73em) {
-    background-size: var(--bp-xl);
+    background-size: var(--bp-xl), cover;
   }
 }
 
@@ -344,7 +339,7 @@ body {
 .investments-card__description {
   font-size: 16px;
   line-height: 24px;
-  color: #E2EFD2;
+  color: #e2efd2;
   margin-top: 0;
   margin-bottom: 28px;
   max-width: 70%;
@@ -376,7 +371,7 @@ body {
   text-align: center;
   font-size: 18px;
   line-height: 32px;
-  color: #E8F5E9;
+  color: #e8f5e9;
 }
 
 .how-it-works_features {
@@ -401,7 +396,7 @@ body {
   line-height: 24px;
   margin: 0;
   flex: 3;
-  color: #E8F5E9;
+  color: #e8f5e9;
 }
 
 .testimonials__title {
@@ -480,8 +475,8 @@ body {
 
 .call-to-action__container {
   padding: 70px 220px;
-  background: #FFFFFF;
-  box-shadow: -1px 25px 20px #F2F2F2;
+  background: #ffffff;
+  box-shadow: -1px 25px 20px #f2f2f2;
   border-radius: 5px;
   text-align: center;
 }
@@ -522,7 +517,7 @@ body {
 
 .footer-link-column__nav-item {
   text-decoration: none;
-  color: #607D8B;
+  color: #607d8b;
 }
 
 .footer-blog {
@@ -530,7 +525,7 @@ body {
   background-color: #66bb6a;
   border-color: #66bb6a;
   border-radius: 5px;
-  color: #EFF7E7;
+  color: #eff7e7;
   width: 280px;
   height: 258px;
 }
@@ -546,7 +541,7 @@ body {
 }
 
 .footer-blog__email {
-  color: #EFF7E7;
+  color: #eff7e7;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -579,6 +574,6 @@ body {
 }
 
 .footer__copyright {
-  color: #607D8B;
+  color: #607d8b;
   font-size: 14px;
 }

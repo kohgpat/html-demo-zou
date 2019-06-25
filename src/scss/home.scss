@@ -1,8 +1,13 @@
 #home {
-  background-image: url(/src/images/main-illustration.svg),
+  background-image: url(/src/images/main-illustration.png),
                     url(/src/images/main-background.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top right, left bottom;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(/src/images/main-illustration@2x.png),
+                      url(/src/images/main-background.svg);
+  }
 
   @media (min-width: 46em) {
     background-size: $bp-med, cover;

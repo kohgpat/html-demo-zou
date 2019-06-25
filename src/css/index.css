@@ -401,6 +401,7 @@ a.button {
 .footer__top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 .footer-link-column__nav {
@@ -452,4 +453,26 @@ a.button {
 
 .footer-blog__signin {
   margin-top: 15px;
+}
+
+.footer__bottom {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #f7f7f7;
+}
+
+.footer__logo {
+  background-size: cover;
+  background-position: center;
+  background-image: url(/src/images/logo.svg);
+  background-repeat: no-repeat;
+  width: 123px;
+  height: 39px;
+}
+
+.footer__copyright {
+  color: #607D8B;
+  font-size: 14px;
 }

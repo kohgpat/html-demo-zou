@@ -69,6 +69,9 @@ body {
   line-height: 32px;
   padding: 8px 42px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 a.button {
@@ -81,6 +84,18 @@ a.button {
   border-color: #66bb6a;
   border-radius: 5px;
   box-shadow: 0px 13px 20px rgba(118, 196, 125, 0.411204);
+}
+
+.button__icon {
+  margin-right: 8px;
+}
+
+.button__icon_user {
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -99,6 +114,13 @@ body {
   display: flex;
   align-items: center;
   height: 100px;
+}
+
+.header__signup {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
 }
 
 .header__logo {
@@ -520,6 +542,10 @@ body {
 
 .footer-blog__signin {
   margin-top: 15px;
+}
+
+.footer-blog__signin .button_icon_user {
+  fill: #66bb6a;
 }
 
 .footer__bottom {

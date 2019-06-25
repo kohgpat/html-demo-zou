@@ -298,18 +298,18 @@ a.button {
 }
 
 .investments-card_1 {
-  background-image: url(/src/images/investments-card-1.png);
+  background-image: url(/src/images/investments-card-1.jpg);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url(/src/images/investments-card-1@2x.png);
+    background-image: url(/src/images/investments-card-1@2x.jpg);
   }
 }
 
 .investments-card_2 {
-  background-image: url(/src/images/investments-card-2.png);
+  background-image: url(/src/images/investments-card-2.jpg);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url(/src/images/investments-card-2@2x.png);
+    background-image: url(/src/images/investments-card-2@2x.jpg);
   }
 }
 

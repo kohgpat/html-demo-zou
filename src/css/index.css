@@ -428,6 +428,7 @@ a.button {
 .footer-blog {
   padding: 50px;
   background-color: #66bb6a;
+  border-color: #66bb6a;
   border-radius: 5px;
   color: #EFF7E7;
   width: 280px;
